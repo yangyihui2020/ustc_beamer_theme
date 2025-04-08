@@ -1,0 +1,85 @@
+\documentclass{beamer}
+
+\usepackage[BoldFont,SlantFont]{xeCJK}
+\setCJKmainfont[Path=fonts/]{STKAITI.TTF}
+\setCJKsansfont[Path=fonts/]{STKAITI.TTF}
+\setCJKmonofont[Path=fonts/]{STKAITI.TTF}
+\setmainfont{Times New Roman}
+\setsansfont{Times New Roman}
+\setmonofont{Times New Roman}
+\usepackage{fontenc}
+\usepackage{hyperref}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+
+\author{yihui}
+\title{USTC Beamer Theme}
+\subtitle{毕业设计开题报告}
+\institute{中国科学技术大学计算机学院}
+\date{2025年4月8日}
+\usepackage{ustc}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\setbeamertemplate{caption}[numbered]
+\renewcommand\figurename{图} 
+\renewcommand\tablename{表}
+
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+
+\newfontfamily\wingdingfamily[Path=fonts/]{wingding.ttf}
+\newcommand\headtoright{%
+  \texorpdfstring{{\wingdingfamily\XeTeXglyph190\relax}}{???}}
+
+\setbeamertemplate{itemize item}{\headtoright}
+\setbeamertemplate{itemize subitem}{$\bullet$}
+\setbeamertemplate{itemize subsubitem}{$\circ$}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.2\linewidth]{figs/ustc_logo.pdf}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+
+\input{Chapters/1_课题背景}
+\input{Chapters/2_研究现状}
+\input{Chapters/3_研究内容}
+\input{Chapters/4_计划进度}
+\input{Chapters/5_参考文献}
+\end{document}

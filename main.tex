@@ -1,5 +1,8 @@
-\documentclass{beamer}
 
+%设置幻灯片格式为16：9
+% \documentclass[aspectratio=169]{beamer}
+% 幻灯片格式4：3
+\documentclass[aspectratio=169]{beamer}
 \usepackage[BoldFont,SlantFont]{xeCJK}
 \setCJKmainfont[Path=fonts/]{STKAITI.TTF}
 \setCJKsansfont[Path=fonts/]{STKAITI.TTF}
@@ -9,27 +12,34 @@
 \setmonofont{Times New Roman}
 \usepackage{fontenc}
 \usepackage{hyperref}
-
+\usepackage{subcaption}
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
 
-% 设置引用格式
 \usepackage[numbers, sort&compress]{natbib}
 \bibliographystyle{plainnat}
+
 
 \usepackage{bm}
 \usepackage{amssymb}
 \usepackage{multirow}
 \usefonttheme{serif}
 \setbeamertemplate{navigation symbols}{}
-
-\author{Test}
-\title{USTC Beamer Theme}
-\subtitle{毕业设计开题报告}
-\institute{中国科学技术大学计算机学院}
-\date{2025年4月8日}
+\usepackage{caption}
+\captionsetup{font={scriptsize}}
+% \author{王国康  云鑫  杨艺辉}
+\author{WangGuokang YunXin YangYihui}
+% \author[a]{王国康}
+% \author[b]{云鑫}
+% \author[c]{杨艺辉}
+\title{Professional English 2025 Presentation}
+\subtitle{From Speaker to Dubber: Movie Dubbing with
+Prosody and Duration Consistency Learning}
+\institute{School of Computer Science and Technology in USTC}
+\date{2025年4月25日}
 \usepackage{ustc}
+
 
 % defs
 \def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
@@ -51,8 +61,8 @@
 }
 
 \setbeamertemplate{caption}[numbered]
-\renewcommand\figurename{图} 
-\renewcommand\tablename{表}
+\renewcommand\figurename{Figure} 
+\renewcommand\tablename{Table}
 
 \usepackage{perpage} %the perpage package
 \MakePerPage{footnote} %the perpage package command
@@ -65,6 +75,7 @@
 \setbeamertemplate{itemize subitem}{$\bullet$}
 \setbeamertemplate{itemize subsubitem}{$\circ$}
 
+
 \begin{document}
 
 \begin{frame}
@@ -76,14 +87,32 @@
     \end{figure}
 \end{frame}
 
+% ppt的介绍也目录设置
 \begin{frame}
-    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+    \frametitle{Outline}
+    \begin{columns}[T] % 对齐方式：顶部对齐
+        \begin{column}{0.48\textwidth}
+            \large
+            \tableofcontents[sections={1-4}, sectionstyle=show, subsectionstyle=show/shaded/hide, subsubsectionstyle=show/shaded/hide]
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \large
+            \tableofcontents[sections={5-}, sectionstyle=show, subsectionstyle=show/shaded/hide, subsubsectionstyle=show/shaded/hide]
+        \end{column}
+    \end{columns}
 \end{frame}
 
+% \input{Chapters/1_课题背景}
+% \input{Chapters/2_研究现状}
+% \input{Chapters/3_研究内容}
+% \input{Chapters/4_计划进度}
+% \input{Chapters/5_参考文献}
 
-\input{Chapters/1_课题背景}
-\input{Chapters/2_研究现状}
-\input{Chapters/3_研究内容}
-\input{Chapters/4_计划进度}
-\input{Chapters/5_参考文献}
+\input{Chapters/1_背景介绍}
+\input{Chapters/2_研究方法与框架}
+\input{Chapters/3_多任务说话者预训练 (MTSP)}
+\input{Chapters/4_韵律一致性学习（PCL）}
+\input{Chapters/5_持续时间一致性对⻬}
+\input{Chapters/6_实验与结果分析}
+\input{Chapters/7_总结}
 \end{document}

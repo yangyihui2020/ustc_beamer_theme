@@ -1,0 +1,95 @@
+\section{Summary}
+
+% \begin{frame}{Summary of the Paper}
+% \begin{itemize}
+%     \item \textbf{Research Contributions}:
+%     \begin{itemize}
+%         \item Proposed a two-stage movie dubbing method that significantly enhances the consistency in timbre, emotional expression, and duration alignment of dubbing through multi-task pre-training and dubbing training.
+%         \item The Prosody Consistency Learning (PCL) module improves emotional consistency in dubbing by aligning emotional features with phoneme-level prosody attributes.
+%         \item The Duration Consistency Reasoning (DCR) module achieves precise duration matching between dubbing and video by aligning lip motion features with phoneme features.
+%     \end{itemize}
+%     \item \textbf{Technical Innovations}:
+%     \begin{itemize}
+%         \item Multi-Task Speaker Pre-training (MTSP) integrates Text-to-Speech (TTS) and Masked Language Model (MLM) tasks, significantly enhancing the model's pronunciation quality and contextual understanding.
+%         \item Introduced Timbre-Adaptive Layer Normalization (TALN), which integrates timbre features into phoneme encoding and mel-spectrogram generation by predicting gain and bias for the input vector sequence, ensuring timbre consistency.
+%     \end{itemize}
+%     \item \textbf{Experimental Results}:
+%     \begin{itemize}
+%         \item The method outperforms current state-of-the-art methods on multiple metrics across the V2C-Animation and GRID benchmark datasets.
+%     \end{itemize}
+% \end{itemize}
+% \end{frame}
+\begin{frame}{Summary of the Paper}
+\begin{itemize}
+    \item \textbf{Research Contributions}:
+    \begin{itemize}
+        \item Proposed a two-stage movie dubbing method enhancing timbre, emotion, and duration alignment via MTSP and dubbing training.
+        \item PCL module improves emotional consistency by aligning emotions with phoneme-level prosody.
+        \item DCR module achieves precise duration matching by aligning lip motion with phoneme features.
+    \end{itemize}
+    \item \textbf{Technical Innovations}:
+    \begin{itemize}
+        \item MTSP integrates TTS and MLM tasks, improving pronunciation quality and contextual understanding.
+        \item TALN integrates timbre features into phoneme encoding and mel-spectrogram generation, ensuring timbre consistency.
+    \end{itemize}
+    \item \textbf{Experimental Results}:
+    \begin{itemize}
+        \item Method outperforms state-of-the-art methods on V2C-Animation and GRID datasets.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+% Second page: Reflections on the paper
+% \begin{frame}{Reflections on the Paper}
+% \begin{itemize}
+%     \item \textbf{Learning Method from 'Simple' to 'Complex'}:
+%     \begin{itemize}
+%         \item The paper employs a two-stage learning framework of "from baby to dubber." It first pre-trains on a large-scale text-to-speech dataset to teach the model clear pronunciation and then fine-tunes on movie dubbing data to adapt to emotional and lip-sync alignment.
+%         \item This method effectively addresses the scarcity and complexity of movie dubbing data, significantly improving dubbing quality and consistency.
+%     \end{itemize}
+%     \item \textbf{Implications for Practical Applications}:
+%     \begin{itemize}
+%         \item Offers new ideas for data scarcity issues: pre-training on general data followed by fine-tuning on specialized data can enhance model performance.
+%         \item Provides insights for multimodal alignment tasks, such as virtual anchors and intelligent customer service.
+%     \end{itemize}
+%     \item \textbf{Future Research Directions}:
+%     \begin{itemize}
+%         \item Optimize the two-stage learning framework, such as introducing more modalities like gestures and facial expressions during the pre-training phase.
+%         \item Introduce user feedback mechanisms in model training to further optimize dubbing effects.
+%     \end{itemize}
+% \end{itemize}
+% \end{frame}
+\begin{frame}{Reflections on the Paper}
+\begin{itemize}
+    \item \textbf{Learning Method from 'Simple' to 'Complex'}:
+    \begin{itemize}
+        \item Uses a two-stage framework: pre-trains on TTS data for clear pronunciation, then fine-tunes on dubbing data for emotion and lip-sync alignment.
+        \item Addresses data scarcity and complexity, improving dubbing quality.
+    \end{itemize}
+    \item \textbf{Implications for Practical Applications}:
+    \begin{itemize}
+        \item Pre-training on general data followed by fine-tuning on specialized data enhances model performance.
+        \item Provides insights for multimodal alignment tasks like virtual anchors and customer service.
+    \end{itemize}
+    \item \textbf{Future Research Directions}:
+    \begin{itemize}
+        \item Optimize two-stage learning by adding more modalities (e.g., gestures, facial expressions) during pre-training.
+        \item Introduce user feedback mechanisms to further optimize dubbing effects.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}
+\begin{itemize}
+    \item References:
+\end{itemize}
+    \scriptsize
+    \bibliography{ref}
+    % % If there are too many references, you can adjust the font size as follows:
+    % \tiny\bibliographystyle{apalike}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra Thanks!} \\
+        \vspace{1cm} % Add some vertical space
+    \end{center}
+\end{frame}

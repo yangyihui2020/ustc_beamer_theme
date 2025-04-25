@@ -1,12 +1,4 @@
-# USTC-Beamer-Theme
+# SUDA-Beamer-Theme
+Based on [THU Beamer Theme](https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb). Modify school logo and theme color, and then made some optimizations.
 
-中科大主题ppt模板（USTC-Beamer-Theme）
-
-Based on [suda Beamer Theme](https://www.overleaf.com/latex/templates/suda-beamer-theme/zrrdkvxkktjr). Modify school logo and theme color, and then made some optimizations.
-
-
-基于 [SUDA Beamer 主题](https://www.overleaf.com/latex/templates/suda-beamer-theme/zrrdkvxkktjr)，
-
-修改了校徽、引用格式和主题颜色，并进行了一些优化。
-
-
+Overleaf page: https://www.overleaf.com/latex/templates/suda-beamer-theme/zrrdkvxkktjr
